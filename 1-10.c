@@ -13,15 +13,18 @@ int main()
     {
         if (c == '\t')
         {
-            printf("\\t");
+	  putchar(0x5C);
+	  putchar('t');
         }
-        else if (c == '\b')
+        else if (c == 0x8)
         {
-            printf("\\b");
+	  putchar(0x5C);
+	  putchar('b');
         }
-        else if (c == '\\')
+        else if (c == 0x5C)
         {
-            printf("\\");
+	  putchar(0x5C);
+	  putchar(0x5c);
         }
         else
         {
