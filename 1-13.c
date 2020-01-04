@@ -4,10 +4,7 @@
 
 #include <stdio.h>
 
-#define IN 1
-#define OUT 0
 #define MAX_WORDS 1000
-
 
 int main()
 {
@@ -29,7 +26,6 @@ int main()
         }
     }
 
-
     for (int i = 0; i < wc; i++)
     {
       printf("%d:\t", i + 1);
@@ -39,6 +35,5 @@ int main()
 	}
       printf("\n");
     }
-
     return (0);
 }
