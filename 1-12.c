@@ -1,11 +1,10 @@
 /* scrivete un programma che stampi il suo input una parola per volta */
-#include <stdio.H>
+#include <stdio.h>
 
 int main()
 {
     char c = 0;
-
-    while ((c = getchar()) != EOF)
+while ((c = getchar()) != EOF)
     {
         if (c == ' ' || c == '\t')
         {
@@ -13,6 +12,5 @@ int main()
         }
         putchar(c);
     }
-
-    return 0;
+return 0;
 }
